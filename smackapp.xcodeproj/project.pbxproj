@@ -13,9 +13,12 @@
 		59922851201965A200AEB395 /* smackapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5992284F201965A200AEB395 /* smackapp.xcdatamodeld */; };
 		59922853201965A200AEB395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59922852201965A200AEB395 /* Assets.xcassets */; };
 		59922856201965A200AEB395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59922854201965A200AEB395 /* LaunchScreen.storyboard */; };
+		59922860201973ED00AEB395 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5992285E201973ED00AEB395 /* SWRevealViewController.m */; };
+		86CE7CFBC2C8F24EFB3BBC8C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBDB42E9670A907A2DF36C /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56CBDB42E9670A907A2DF36C /* Pods_smackapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59922845201965A200AEB395 /* smackapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smackapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59922848201965A200AEB395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5992284A201965A200AEB395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,11 @@
 		59922852201965A200AEB395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59922855201965A200AEB395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59922857201965A200AEB395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5992285D201973EC00AEB395 /* smackapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		5992285E201973ED00AEB395 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5992285F201973ED00AEB395 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6A27A1C046D306F9037D5508 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
+		B4EBE3481E2D98FC05DD3AC1 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CE7CFBC2C8F24EFB3BBC8C /* Pods_smackapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209832A146D260183583E8B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56CBDB42E9670A907A2DF36C /* Pods_smackapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5992283C201965A200AEB395 = {
 			isa = PBXGroup;
 			children = (
+				599228612019740400AEB395 /* Supporting Files */,
 				59922847201965A200AEB395 /* smackapp */,
 				59922846201965A200AEB395 /* Products */,
+				F6EE39C15892CB3734DD8A95 /* Pods */,
+				209832A146D260183583E8B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +83,27 @@
 				59922854201965A200AEB395 /* LaunchScreen.storyboard */,
 				59922857201965A200AEB395 /* Info.plist */,
 				5992284F201965A200AEB395 /* smackapp.xcdatamodeld */,
+				5992285D201973EC00AEB395 /* smackapp-Bridging-Header.h */,
 			);
 			path = smackapp;
+			sourceTree = "<group>";
+		};
+		599228612019740400AEB395 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5992285F201973ED00AEB395 /* SWRevealViewController.h */,
+				5992285E201973ED00AEB395 /* SWRevealViewController.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6EE39C15892CB3734DD8A95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4EBE3481E2D98FC05DD3AC1 /* Pods-smackapp.debug.xcconfig */,
+				6A27A1C046D306F9037D5508 /* Pods-smackapp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5992285A201965A200AEB395 /* Build configuration list for PBXNativeTarget "smackapp" */;
 			buildPhases = (
+				38DF29770D6A26E492DF0510 /* [CP] Check Pods Manifest.lock */,
 				59922841201965A200AEB395 /* Sources */,
 				59922842201965A200AEB395 /* Frameworks */,
 				59922843201965A200AEB395 /* Resources */,
+				C28CB9BE0DBC0F8EE5F1B1EF /* [CP] Embed Pods Frameworks */,
+				AFDFC2D78CF5949DD3DAC43F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +141,7 @@
 				TargetAttributes = {
 					59922844201965A200AEB395 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,6 +177,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38DF29770D6A26E492DF0510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smackapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDFC2D78CF5949DD3DAC43F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smackapp/Pods-smackapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28CB9BE0DBC0F8EE5F1B1EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smackapp/Pods-smackapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smackapp/Pods-smackapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		59922841201965A200AEB395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +245,7 @@
 				5992284B201965A200AEB395 /* ViewController.swift in Sources */,
 				59922849201965A200AEB395 /* AppDelegate.swift in Sources */,
 				59922851201965A200AEB395 /* smackapp.xcdatamodeld in Sources */,
+				59922860201973ED00AEB395 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +380,18 @@
 		};
 		5992285B201965A200AEB395 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EBE3481E2D98FC05DD3AC1 /* Pods-smackapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X2WS25TYD;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nithin.smackapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smackapp/smackapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +399,17 @@
 		};
 		5992285C201965A200AEB395 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A27A1C046D306F9037D5508 /* Pods-smackapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X2WS25TYD;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nithin.smackapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smackapp/smackapp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,6 @@
+framework module Pods_smackapp {
+  umbrella header "Pods-smackapp-umbrella.h"
+
+  export *
+  module * { export * }
+}
