@@ -24,6 +24,7 @@
 		599228C020203B0D00AEB395 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228BF20203B0D00AEB395 /* DataService.swift */; };
 		599228C220204BEF00AEB395 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228C120204BEF00AEB395 /* AvatarPickerVC.swift */; };
 		599228C420204EB200AEB395 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228C320204EB200AEB395 /* AvatarCell.swift */; };
+		599228C820206A7500AEB395 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228C720206A7500AEB395 /* CircleImage.swift */; };
 		86CE7CFBC2C8F24EFB3BBC8C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBDB42E9670A907A2DF36C /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		599228BF20203B0D00AEB395 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		599228C120204BEF00AEB395 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		599228C320204EB200AEB395 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		599228C720206A7500AEB395 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		6A27A1C046D306F9037D5508 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
 		B4EBE3481E2D98FC05DD3AC1 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				59922875201A641200AEB395 /* GradientView.swift */,
 				599228BD201FDAFD00AEB395 /* RoundedButton.swift */,
 				599228C320204EB200AEB395 /* AvatarCell.swift */,
+				599228C720206A7500AEB395 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				5992287E201B1AF400AEB395 /* AuthService.swift in Sources */,
 				59922860201973ED00AEB395 /* SWRevealViewController.m in Sources */,
 				599228C220204BEF00AEB395 /* AvatarPickerVC.swift in Sources */,
+				599228C820206A7500AEB395 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
