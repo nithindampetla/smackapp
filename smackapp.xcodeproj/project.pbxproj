@@ -17,6 +17,13 @@
 		5992286620199E5100AEB395 /* ChatVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992286520199E5100AEB395 /* ChatVc.swift */; };
 		59922876201A641200AEB395 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59922875201A641200AEB395 /* GradientView.swift */; };
 		59922878201A79F600AEB395 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59922877201A79F600AEB395 /* loginVC.swift */; };
+		5992287B201A7E6200AEB395 /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992287A201A7E6200AEB395 /* createAccountVC.swift */; };
+		5992287E201B1AF400AEB395 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992287D201B1AF400AEB395 /* AuthService.swift */; };
+		59922880201B1D2D00AEB395 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992287F201B1D2D00AEB395 /* Constants.swift */; };
+		599228BE201FDAFD00AEB395 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228BD201FDAFD00AEB395 /* RoundedButton.swift */; };
+		599228C020203B0D00AEB395 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228BF20203B0D00AEB395 /* DataService.swift */; };
+		599228C220204BEF00AEB395 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228C120204BEF00AEB395 /* AvatarPickerVC.swift */; };
+		599228C420204EB200AEB395 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599228C320204EB200AEB395 /* AvatarCell.swift */; };
 		86CE7CFBC2C8F24EFB3BBC8C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBDB42E9670A907A2DF36C /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,13 @@
 		5992286520199E5100AEB395 /* ChatVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVc.swift; sourceTree = "<group>"; };
 		59922875201A641200AEB395 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		59922877201A79F600AEB395 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		5992287A201A7E6200AEB395 /* createAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
+		5992287D201B1AF400AEB395 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5992287F201B1D2D00AEB395 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		599228BD201FDAFD00AEB395 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		599228BF20203B0D00AEB395 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		599228C120204BEF00AEB395 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		599228C320204EB200AEB395 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		6A27A1C046D306F9037D5508 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
 		B4EBE3481E2D98FC05DD3AC1 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +95,8 @@
 		59922847201965A200AEB395 /* smackapp */ = {
 			isa = PBXGroup;
 			children = (
+				5992287C201B1AE400AEB395 /* Services */,
+				59922879201A7E3E00AEB395 /* Utilities */,
 				59922874201A63E100AEB395 /* View */,
 				5992286220199E1700AEB395 /* Controllers */,
 				599228612019740400AEB395 /* Supporting Files */,
@@ -110,6 +126,8 @@
 				5992286320199E3900AEB395 /* ChannelVc.swift */,
 				5992286520199E5100AEB395 /* ChatVc.swift */,
 				59922877201A79F600AEB395 /* loginVC.swift */,
+				5992287A201A7E6200AEB395 /* createAccountVC.swift */,
+				599228C120204BEF00AEB395 /* AvatarPickerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,8 +136,27 @@
 			isa = PBXGroup;
 			children = (
 				59922875201A641200AEB395 /* GradientView.swift */,
+				599228BD201FDAFD00AEB395 /* RoundedButton.swift */,
+				599228C320204EB200AEB395 /* AvatarCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		59922879201A7E3E00AEB395 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5992287F201B1D2D00AEB395 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5992287C201B1AE400AEB395 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5992287D201B1AF400AEB395 /* AuthService.swift */,
+				599228BF20203B0D00AEB395 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F6EE39C15892CB3734DD8A95 /* Pods */ = {
@@ -269,11 +306,18 @@
 			files = (
 				5992286620199E5100AEB395 /* ChatVc.swift in Sources */,
 				5992286420199E3900AEB395 /* ChannelVc.swift in Sources */,
+				599228C420204EB200AEB395 /* AvatarCell.swift in Sources */,
+				5992287B201A7E6200AEB395 /* createAccountVC.swift in Sources */,
+				599228C020203B0D00AEB395 /* DataService.swift in Sources */,
 				59922876201A641200AEB395 /* GradientView.swift in Sources */,
 				59922878201A79F600AEB395 /* loginVC.swift in Sources */,
+				59922880201B1D2D00AEB395 /* Constants.swift in Sources */,
+				599228BE201FDAFD00AEB395 /* RoundedButton.swift in Sources */,
 				59922849201965A200AEB395 /* AppDelegate.swift in Sources */,
 				59922851201965A200AEB395 /* smackapp.xcdatamodeld in Sources */,
+				5992287E201B1AF400AEB395 /* AuthService.swift in Sources */,
 				59922860201973ED00AEB395 /* SWRevealViewController.m in Sources */,
+				599228C220204BEF00AEB395 /* AvatarPickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
