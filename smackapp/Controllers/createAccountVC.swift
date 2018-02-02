@@ -77,15 +77,14 @@ class createAccountVC: UIViewController {
         let r = CGFloat(arc4random_uniform(255))/255
         let g = CGFloat(arc4random_uniform(255))/255
         let b = CGFloat(arc4random_uniform(255))/255
-        
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        avatarColor = "[\(r),\(g),\(b),1]"
         UIView.animate(withDuration: 0.4){
         self.userImage.backgroundColor = self.bgColor
         }
     }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
-        
         performSegue(withIdentifier: "toChanellVc", sender: nil)
     }
     
@@ -96,7 +95,6 @@ class createAccountVC: UIViewController {
         emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
         passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
         
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
         view.addGestureRecognizer(tap)
     }
@@ -104,7 +102,4 @@ class createAccountVC: UIViewController {
     @objc func handleTap(){
         view.endEditing(true)
     }
-    
-
-    
 }
